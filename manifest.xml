@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <canvashack>
     <name>Detect IFRAME Fail</name>
-    <id>detect-google-auth-fail</id>
+    <id>detect-iframe-fail</id>
     <abstract>Rather than allowing embedded iframes to fail invisibly, provide helpful guidance.</abstract>
     <authors>
         <author>
@@ -10,7 +10,7 @@
         </author>
     </authors>
     <components>
-        <javascript>detect-iframe-fail.js.php</javascript>
+        <javascript>detect-iframe-fail.js</javascript>
         <canvas>
             <pages>
                 <include>
@@ -20,6 +20,13 @@
                     </page>
                 </include>
             </pages>
+    	    <dom>
+    			<bundle>
+    				<event>load</event>
+    				<action>checkIframes()</action>
+    				<selector>#content</selector>
+    			</bundle>
+            </dom>
         </canvas>
     </components>
 </canvashack>
