@@ -1,0 +1,15 @@
+{
+    "name": "canvashack/plugin-detect-iframe-fail",
+    "description": "Rather than allowing embedded iframes to fail invisibly, provide helpful guidance.",
+    "type": "canvashack-plugin",
+    "license": "GPL-3.0",
+    "authors": [
+        {
+            "name": "Seth Battis",
+            "email": "sethbattis@stmarksschool.org"
+        }
+    ],
+    "require": {
+        "battis/appmetadata": "*"
+    }
+}

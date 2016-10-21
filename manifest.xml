@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<canvashack>
+    <name>Detect &lt;IFRAME&gt; Fail</name>
+    <id>detect-google-auth-fail</id>
+    <abstract>Rather than allowing embedded iframes to fail invisibly, provide helpful guidance.</abstract>
+    <authors>
+        <author>
+            <name>Seth Battis</name>
+            <email>SethBattis@stmarksschool.org</email>
+        </author>
+    </authors>
+    <components>
+        <javascript>detect-google-auth-fail.js.php</javascript>
+        <canvas>
+            <pages>
+                <include>
+                    <page>
+                        <type>regex</type>
+                        <pattern>/.*/</pattern>
+                    </page>
+                </include>
+            </pages>
+        </canvas>
+    </components>
+</canvashack>
