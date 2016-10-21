@@ -2,7 +2,7 @@ var canvashack = {
     checkIframes: function () {
         "use strict";
         var
-            frames = $('iframe:not([src*="instructure"]):not([id*="instructure"])'),
+            frames = $('div[role="main"] .user_content iframe:not([src*="instructure"]):not([id*="instructure"])'),
             googleTest = /google\.com/;
         if (frames.size() > 0) {
             frames.wrap('<div class="canary"/>');
