@@ -10,7 +10,7 @@
         </author>
     </authors>
     <components>
-        <javascript>detect-google-auth-fail.js.php</javascript>
+        <javascript>detect-iframe-fail.js.php</javascript>
         <canvas>
             <pages>
                 <include>
