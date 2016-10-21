@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <canvashack>
-    <name>Detect &lt;IFRAME&gt; Fail</name>
+    <name>Detect IFRAME Fail</name>
     <id>detect-google-auth-fail</id>
     <abstract>Rather than allowing embedded iframes to fail invisibly, provide helpful guidance.</abstract>
     <authors>
