@@ -5,7 +5,7 @@ var canvashack = {
             frames = $('div[role="main"] .user_content iframe:not([src*="instructure"]):not([id*="instructure"])'),
             googleTest = /google\.com/;
         if (frames.size() > 0) {
-            frames.wrap('<div class="canary"/>');
+            frames.wrap('<div class="canary" style="position: relative;"/>');
             $('.canary').each(function (i, elt) {
                 var
                     canary = $(elt),
