@@ -1,3 +1,4 @@
+/*global $ */
 var canvashack = {
     checkIframes: function () {
         "use strict";
@@ -13,9 +14,11 @@ var canvashack = {
                 canary.width(frame.width());
                 canary.height(frame.height());
                 frame.css('position', 'absolute').css('top', 0).css('left', 0).width('100%').height('100%');
-                canary.append('<p>Warning: IFRAME embed failed!</p>');
+                canary.append('<h3>An embedded IFRAME is loading&hellip;</h3><p>If you still see this message after a reasonable period of time (3-5 seconds), ');
                 if (googleTest.test(frame.attr('src'))) {
-                    canary.append('<p>If you see nothing here, it&rsquo;s because you need to log in to Google. Open your Gmail in another tab, log in and then refresh this page.</p>');
+                    canary.append('it&rsquo;s because you need to log in to Google. <strong>Open your Gmail in another tab, log in and then refresh this page.<strong></p>');
+                } else {
+                    canary.append('something has probably gone wrong. <strong>Click the Help link at the bottom left of the screen and report a problem!</strong></p>');
                 }
             });
         }
